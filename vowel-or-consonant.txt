@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsonantOrVowel
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            CheckConsonantOrVowel();
+        }
+
+        static void CheckConsonantOrVowel()
+        {
+            string alphabetEntered = string.Empty;
+            Console.WriteLine("Please enter an alphabet from a to z");
+            alphabetEntered = Console.ReadLine();
+            if(alphabetEntered == "a")
+            {
+                Console.WriteLine("Vowel");
+            } else if (alphabetEntered == "e")
+            {
+                Console.WriteLine("Vowel");
+            } else if (alphabetEntered == "i")
+            {
+                Console.WriteLine("Vowel");
+            } else if (alphabetEntered == "o")
+            {
+                Console.WriteLine("Vowel");
+            } else if (alphabetEntered == "u")
+            {
+                Console.WriteLine("Vowel");
+            } else 
+            {
+                Console.WriteLine("Consonant");
+            }
+
+
+        }
+    }
+}
