@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DisplayMaximumNumber
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            DisplayMaximum();
+        }
+
+        static void DisplayMaximum() 
+        {
+            int x, y, z;
+            Console.WriteLine("You're going to enter three numbers, please enter the first one");
+            x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please enter the second one");
+            y = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please enter the third one");
+            z = Convert.ToInt32(Console.ReadLine());
+            if (x >= y && x >= z)
+            {
+                Console.WriteLine(x + " is the maximum number");
+            } else if (y >= x && y >= z)
+            {
+                Console.WriteLine(y + " is the maximum number");
+            } else if (z >= y && z >= x)
+            {
+                Console.WriteLine(z + " is the maximum number");
+            } 
+        }
+    }
+}
