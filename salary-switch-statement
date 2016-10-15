@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Salary_Bonus_Switch
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double BasicSalary = 0;
+            string Role = string.Empty;
+
+            Console.WriteLine("Please enter your basic salary");
+            BasicSalary = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Please enter your role pick from Manager, Supervisor, or Executive");
+            Role = Console.ReadLine();
+
+            switch(Role)
+            {
+                case "Manager":
+                    BasicSalary = BasicSalary * 1.15;
+                    Console.WriteLine("The total salary of the employee is now {0}", BasicSalary);
+                    break;
+                case "Supervisor":
+                    BasicSalary = BasicSalary * 1.20;
+                    Console.WriteLine("The total salary of the employee is now {0}", BasicSalary);
+                    break;
+                case "Executive":
+                    BasicSalary = BasicSalary * 1.25;
+                    Console.WriteLine("The total salary of the employee is now {0}", BasicSalary);
+                    break;
+                default:
+                    Console.WriteLine("Invalid operator");
+                    break;
+            }
+        }
+    }
+}
